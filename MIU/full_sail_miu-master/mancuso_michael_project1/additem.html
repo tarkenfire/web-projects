@@ -1,0 +1,86 @@
+<!--
+Michael Mancuso
+Visual Frameworks
+Project 3
+-->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Add Character...</title>
+            
+            <link rel="stylesheet" href="css/styles.css" type="text/css" />
+            
+            <meta name="viewport" content="width=device-width" />
+            <meta charset="UTF-8" />
+            <meta name="robots" content="noindex, nofollow" />
+            <meta name="keywords" content="rpg, character, dungeons, dragons" />
+            <meta name="description" content="A character creator for table-top rpgs." />
+        </head>
+        <body>
+            <h1>Add Character</h1>
+            <nav>
+                <a href="#" id="displayLink">Display Saved Characters</a>
+                <a href="additem.html" id="newCharLink" style="display:none;">Add New Character</a>
+                <a href="#" id="clearLink">Clear Saved Data</a>
+            </nav>
+            
+            <!--Using D&D 4e essentials as the base, since I know it off hand.-->
+            <form action="#" method="post" id="newCharForm">
+                <fieldset>
+                    <legend>Character</legend>
+                    <input type="hidden" value="hiddenvalue" name="neverseen">
+                    <ul id="errorList"></ul>
+                    <label for="dateCreated" class="blockedLabel">Date Created:</label> <input type="date" id="dateCreated">
+                    <br>
+                    <label for="charName" class="blockedLabel">Name:</label><input type="text" id="charName">
+                    <br>
+                    <div id="genderSelect">Gender:
+                        <label for="male">Male</label><input type="radio" name="gender" id="male" value="Male">
+                        <label for="female">Female</label><input type="radio" name="gender" id="female" value="Female">
+                    </div>
+                    <label for="charRaceSelect" class="blockedLabel">Race:</label>
+                    <select id="charRaceSelect">
+                        <optgroup label="Race" id="charRace">
+                            <option>Human</option>
+                            <option>Dwarf</option>
+                            <option>Elf</option>
+                            <option>Eladrin</option>
+                            <option>Halfling</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="charClassSelect" class="blockedLabel">Class:</label>
+                    <select id="charClassSelect">
+                        <optgroup label="Class" id="charClass">
+                            <option>Fighter</option>
+                            <option>Rogue</option>
+                            <option>Cleric</option>
+                            <option>Wizard</option>
+                            <option>Ranger</option>
+                        </optgroup>
+                    </select>                
+                    <fieldset id="attributes">
+                        <legend>Attributes</legend>
+                        <label for="charStr">STR:</label> <input type="text" id="charStr" ><br>
+                        <label for="charCon">CON:</label> <input type="text" id="charCon" ><br>
+                        <label for="charDex">DEX:</label> <input type="text" id="charDex" ><br>
+                        <label for="charInt">INT:</label> <input type="text" id="charInt" ><br>
+                        <label for="charWis">WIS:</label> <input type="text" id="charWis" ><br >
+                        <label for="charCha">CHA:</label> <input type="text" id="charCha" >
+                    </fieldset>
+                    <br >
+                    <label for="charBio" class="blockedLabel">Character Bio:</label>
+                    <textarea id="charBio">
+                        
+                    </textarea>
+                    <br >
+                    <label for="charRating" class="blockedLabel">Rating (1-100)</label>
+                    <input type="range" min="1" max="100" value="0" name="rating" id="charRating">
+                </fieldset>
+                <input type="submit" value="Submit" id="btnSubmit">
+            </form>
+            
+            <script type="text/javascript" src="js/main.js" ></script>
+            <script type="text/javascript" src="js/json.js" ></script>
+        </body>
+    </html>

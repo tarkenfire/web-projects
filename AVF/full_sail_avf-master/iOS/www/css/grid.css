@@ -1,0 +1,45 @@
+*, *:after, *:before{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*Rows*/
+.row{ width: 940px; max-width: 100%; min-width: 768px; margin: 0 auto;}
+
+.row:after{ content:""; clear: both; }
+
+/*Columns. The first two selectors deal with the "gutter", the padding between the columns.
+The last "column" in the row shouldn't have a gutter, so no padding.*/
+
+[class$="-columns"]{ float:left; padding-right:20px; }
+
+[class$="-columns"]:last-of-type{ padding-right: 0; }
+
+.one-columns{ width:12.5%; }
+.two-columns{ width:25%; }
+.three-columns{ width:37.5%; }
+.four-columns{ width:50%; }
+.five-columns{ width:62.5%; }
+.six-columns{ width:75% }
+.seven-columns{ width:87.5% }
+.eight-columns{ width:100%; }
+
+/*UL Grid - only support for 2 up grids, as they are all I use in this.*/
+.ul-grid{ display: block; overflow: hidden; padding: 0; }
+.ul-grid > li { display: block; height: auto; float: left; width: 50%; padding: 0 15px 15px; padding: 0 8px 8px; }
+.ul-grid > li:nth-child(2n+1) { clear: both; }
+
+/*Collapses the layout to one row when the screen width becomes lower than a certain size 
+or is landscape.
+
+Nowhere near as elegant as Foundation, but that's because it's not as complex. */
+@media all and (max-width: 760px)
+{
+	.row { width: auto; max-width: none; min-width: 0; margin: 0; }
+	[class$="-columns"]{ width:100%; }
+	.button { margin-top:100px; }
+}
+
+@media all and (orientation: portrait)
+{
+	.row { width: auto; max-width: none; min-width: 0; margin: 0; }
+	[class$="-columns"]{ width:100%; }
+	.button { margin-top:100px; }
+}

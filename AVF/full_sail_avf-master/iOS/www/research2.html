@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - Research 2
+ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+                
+    	<!-- Personal css to override  -->
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    	
+    	<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+		<title>Research 2</title>
+	</head>
+	<body>
+		<!-- "Header Section" -->
+		<div class="row">
+			<div class="eight-columns">
+				<h1>Discussion 2</h1>
+				<h2>Topic:</h2>
+				<h3>Accessibility</h3>
+			<hr>
+			</div>
+		</div>
+		
+		<!-- Content section -->
+		<div class="row">
+			<!-- Home navigation -->
+			<div class = "one-columns">
+				<!-- CSS-drawn arrow -->
+				<a href="index.html"><div class="arrow-left"></div></a>
+				<p>Index</p>
+			</div>
+			<!-- core content -->
+			<div class ="seven-columns">
+				<div class="four-columns">
+					<p>1. The blindingly obvious option would be to use the semantic tags brought around in HTML 5, such as "article", "nav", "header" and "footer" in place of divs performing the same purpose (with IDs). In strait HTML/CSS, this is a somewhat obvious choice, but when forced to use Frameworks, or even worse, CMSes, it becomes harder to implement. One could say this is a good argument against the use of both, but there are advantages to the two as well. Furthermore, trying to encourage the use of standard things, such as HTML video over Flash video, would be helpful. However, and this is a tangential aside, simply not supporting third party technologies in an attempt to "encourage" isn't the way to go (*cough*Chrome Mobile*cough*), so caution must be taken in this regard.</p>
+					<p>2. The core "problem" most of these pieces of software are the creations of humans. Namely, malformed HTML, in the sense of neglecting attributes needed for accessibility, such as alts for images (invalid markup as of HTML4). Also, there are hurdles when it comes to third-party stuff, like flash applets and java applets, which can't be translated into spoken english by software at this point in time.</p>
+				</div>
+				<div class="four-columns">
+					<p>3. Two devices that can be used for those with disabilities are Braille embossers and screen magnifiers. The latter simply digitally enlarges portions of the screen to be more easily seen, while the former are more interesting. The embossers convert on-screen text into Braille, a language meant for those who are blind to read. These embossers literally print Braille onto a special paper meant for use in the devices. Not terribly eco-friendly compared to screen-readers, but not nearly as loud, which is important for some.</p>
+					<p>4. Two apps I found while looking in the Play Market are TalkBack, by Google (<a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback">https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback</a>) and Voice Notify by Pilot_51(<a href="https://play.google.com/store/apps/details?id=com.pilot51.voicenotify">https://play.google.com/store/apps/details?id=com.pilot51.voicenotify</a>). The latter provides audio readback of system notifications whereas the former is a default app in more recent versions of Android that provides a suite of accessibility options ranging from more tactile feedback to a visual and audio notifications to aid those with impairments.</p>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+	</body>
+</html>

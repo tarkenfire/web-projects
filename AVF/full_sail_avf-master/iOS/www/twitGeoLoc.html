@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - Twitter GeoLocation
+ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        
+    	<!-- Personal css to override  -->
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    	
+    	<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+		<title>Twitter Geo Search</title>
+	</head>
+	<body>
+		<!-- "Header Section" -->
+		<div class="row">
+			<div class="eight-columns">
+				<h1>Twitter Geolocation Demo</h1>
+			</div>
+		</div>
+		
+		<!-- Content section -->
+		<div class="row">
+			<!-- Home navigation -->
+			<div class = "one-columns">
+				<!-- CSS-drawn arrow -->
+				<a href="index.html"><div class="arrow-left"></div></a>
+				<p>Index</p>
+			</div>
+			<!-- core content -->
+			<div class ="seven-columns">
+				<p>In this demonstration, we will be combining the native feature of geolocation (via GPS, wifi triangulation, cell tower triangulation, etc) and a web service (in this case, twitter).</p>
+				<p>Press the button below to find tweets (with proper locations attached) within 10 miles of the current location of this device. If the location features of the device are not available (either due to being disabled or unavailable), an error will appear.</p>
+				<a class="button geoSearchBtn">Find Tweets Near Me</a>
+			</div>
+		</div>	
+		
+		<div class="eight-columns">
+			<ul class="searchResults"></ul>
+			<hr>
+		</div>
+		
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+    	<script type="text/javascript" src="js/twitter.js"></script>
+	</body>
+</html>

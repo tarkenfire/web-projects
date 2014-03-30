@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App
+ -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+         
+        <!-- Personal css to override  -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        
+        <script type="text/javascript" src="js/modernizr.foundation.js"></script>
+        <title>AVF Demo</title>
+    </head>
+    <body>
+    
+    <div class="row">
+    	<div class="eight-columns">
+        	<h1>AVF Demo App</h1>
+        	<h3>Michael Mancuso - AVF 0113</h3>
+        	<hr>
+        </div>
+	</div>
+	
+	<div class="row">
+	    <div class="four-columns">
+	    	<h3>iOS/Android Native Features Examples</h3>
+			<p>The below examples demonstrate features native features in the two mobile OSes for this project. Three will work on both devices (denoted by the split icon), one will work on iOS (denoted by the "iOS" logo), and one will work on Android (denoted by the "Android Robot" logo).</p>
+        	<!-- I chose PNGs because jpegs were giving me massive quality losses due to the vector-like nature of images.
+       		They compressed to reasonable sizes for the file type (in my opinion) -->
+        	<ul class="ul-grid">
+        		<li><a href="geoloc.html"><img src="img/dualDemoLogo.png" alt="geolocation"></a><p>Geolocation</p></li>
+        		<li><a href="notifi.html"><img src="img/dualDemoLogo.png" alt="geolocation"></a><p>Notifications</p></li>
+        		<li><a href="accelo.html"><img src="img/iosDemoLogo.png" alt="geolocation"></a><p>Accelerometer</p></li>
+        		<li><a href="fileAccess.html"><img src="img/andDemoLogo.png" alt="geolocation"></a><p>File Access</p></li>
+        	</ul>
+        	<hr>
+        	<h3>Rotating Muffin Video</h3>
+        	<video width="320" height="240" controls>
+  				<source src="http://www.tarkenfire.com/personal/muffin.mp4" type="video/mp4">
+  				<source src="http://www.tarkenfire.com/personal/muffin.ogg" type="video/ogg">
+  				Your browser does not support the video tag.
+			</video>
+        	<hr>
+		</div>
+        
+        <div class="four-columns">
+        	<h3>NEW - Data/Native Mashups</h3>
+        	<p>Below are two mashups of native features and data APIs. I decided to separate them into new pages for the sake of contrasting with their non mashup forms.</p>
+        	<ul class="ul-grid">
+        		<li><a href="twitGeoLoc.html"><img src="img/twitmash.png" alt="Twitter Geolocation"></a><p>Twitter Geolocation</p></li>
+        		<li><a href="nprFilteredData.html"><img src="img/nprmash.png" alt="Data Filtered NPR"></a><p>Data Filtered NPR</p></li>
+        	</ul>
+        	
+        	
+        	
+        	<hr>
+       		<h3>JSON Data API Examples</h3>
+        	<p>The following two links show examples of using RESTful JSON APIs via mobile environments, via the Cordova/PhoneGap framework.</p>
+        	<ul class="ul-grid">
+        		<li><a href="twitDataDemo.html"><img src="img/twit.png" alt="Twitter Demo"></a><p>Twitter</p></li>
+        		<li><a href="nprDataDemo.html"><img src="img/npr.png" alt="NPR Demo"></a><p>NPR</p></li>
+        	</ul>
+        	<hr>		
+        	<h3>Research</h3>
+        	<p><a href="research1.html">Week One - Data Research, Project Intent</a></p>
+        	<p><a href="research2.html">Week Two - Accessibility</a></p>
+        	<p><a href="research3.html">Week Three - Industry Research</a></p>
+        	<hr>
+        </div>
+        
+	</div>
+        <!-- Framework scripts -->
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+    </body>
+</html>

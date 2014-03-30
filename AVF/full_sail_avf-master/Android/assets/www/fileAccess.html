@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - File Access Demo
+ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        
+    	<!-- Personal css to override  -->
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    	
+    	<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+		<title>File Access Demo</title>
+	</head>
+	<body>
+		<!-- "Header Section" -->
+		<div class="row">
+			<div class="eight-columns">
+				<h1>File System Demo</h1>
+			</div>
+		</div>
+		
+		<!-- Content section -->
+		<div class="row">
+			<!-- Home navigation -->
+			<div class = "one-columns">
+				<!-- CSS-drawn arrow -->
+				<a href="index.html"><div class="arrow-left"></div></a>
+				<p>Index</p>
+			</div>
+			<!-- core content -->
+			<div class ="seven-columns">
+				<p>Below is a browsable file viewer for the android system. Please note that as this is a "proof of concept", that the file browser is read-only at this time.</p>
+				<a class="button fileShow">Show Files</a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="eight-columns">
+				<ul class="fileBrowser"></ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+    	<script type="text/javascript" src="js/native.js"></script>
+	</body>
+</html>

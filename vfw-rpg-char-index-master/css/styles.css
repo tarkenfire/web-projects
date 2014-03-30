@@ -1,0 +1,82 @@
+/*
+Michael Mancuso
+VFW - Project 2
+CSS For additem.html and index.html
+*/
+
+/*I prefer the "android 4.x" style over most others, so aiming for a look like that
+
+P4 edit: I decided to stick to the monochrome design.
+*/
+
+/*general styles */
+*
+{
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+body
+{
+    background-color: #000000;
+    font:14px "Lucida Console", Monaco, monospace;
+    color: #FFFFFF;
+}
+
+br
+{
+    clear: left;
+}
+
+a:link { color:#FFFFFF; text-decoration:underline; }
+a:visited { color:#FFFFEE; text-decoration:underline; }
+a:hover { color:#EEFFEE; text-decoration:underline; }
+a:active { color:#FF0000; text-decoration:underline; }
+
+/*index.html*/
+
+
+
+/*additem.html*/
+#btnSubmit
+{
+    border: 1px solid #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;    
+}
+
+#genderSelect
+{
+    margin-left: 65px;
+}
+
+#attributes
+{
+    margin-left:50px;
+    padding-left:50px;
+}
+
+#errorList li
+{
+    color: #FF0000;
+}
+
+.blockedLabel
+{
+    display: block;
+    width: 120px;
+    float: left;
+    margin: 2px 4px 6px 4px;
+    text-align: right;
+}
+
+.charList
+{
+    margin-top: 20px;
+    background-color: #292929;
+}
+
+.imgLi
+{
+    list-style: none;
+}

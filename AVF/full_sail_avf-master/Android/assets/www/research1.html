@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - Discussion 1 research
+ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+            
+    <!-- Personal css to override  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    
+    <script type="text/javascript" src="js/modernizr.foundation.js"></script>
+	<title>Research 1</title>
+</head>
+<body>	
+	<div class="row">
+		<div class="eight-columns">
+			<h1>Discussion 1</h1>
+			<h2>Topic:</h2>
+			<h3>Data Research, Project Intent</h3>
+			<hr>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="one-columns">
+			<!-- CSS-drawn arrow -->
+			<a href="index.html"><div class="arrow-left"></div></a>
+			<p>Index</p>
+		</div>
+		<div class="seven-columns">
+			<div class= "four-columns">
+				<p>Let’s just go through this bullet point to bullet point, starting with the first of the benefits of using “live data”, in this case Twitter, for login and payment purposes.</p>
+				<p>In theory, you could use your Twitter login for authenticating yourself on other websites, using one login for multiple sites. (that is, unless the other site competes with “the Twitter experience”, in which case it is blocked/api capped). This said, of social networks, Facebook is a much more lucrative option here, hence the fact of you seeing many more “sign in with Facebook” than “sign in with Twitter” buttons.</p>
+				<p>This leads into the second part, payments. A credit card or other payment info can be associated with the Twitter account…however, in this case, other social accounts would still be better for this. Facebook and G+ enforce a strict real-name policy, whereas Twitter only loosely enforces such a thing. Furthermore, the latter two social platforms require more information than twitter, making them more preferable for authentication purposes.</p>
+				<p>So, I’ve just made the case that twitter isn’t good for the two things I was supposed to prove it was good for…so moving onto the second point.</p>
+				<p>The reason we would need to use JSON-P specifically is otherwise we would violate the single origin policy. One could argue we are STILL violating the SOP via a hacky method of injecting script tags into the DOM, but it is what it is. Using JSON-P will be more annoying in the case of errors of course, because of the fact that the server will NEVER trigger any error codes, but that is the best-est option we have in the face of the flawed-for-the-modern-data-world XHR. (there is stuff like the CORS, but…we don’t have an entire essay here for me to make my feelings known on the issue)</p>
+			</div>
+			<div class="four-columns">
+				<p>Moving onto the third point, of what type of data would work best for native features. For this one, I’m not particularly sure. JSON requests, by their very nature, offer raw data in a generic form that can be implemented for any native environment. This said, in making the request, the most obvious thing I can think of is the use of GeoLocation data for mapping and weather services. Otherwise, offhand, I can’t think of any other native feature that would add anything to a data request. That said, GeoLoc data is a powerful thing for data requests anyways.</p>
+				<p>Now we’re on the fourth point, regarding whatever intentions I may have for my “mash-ups” in week four. One of the data apis is going to mandatorily be Twitter, and my tentative pick for the second one is the art sharing site DeviantArt. That said, both of these services require an account with them (of which I have for both), and OAuth (the terribly antiquated OAuth 1.0A for Twitter and OAuth 2.0 for dA) for any “advanced” functions. So, it will likely require a bit of effort to implement mashup ideas such as uploading a picture from the camera to dA or to Twitter. (the latter is discouraged if you are emulating the “Twitter experience).</p>
+				<p>This will be particularly annoying with Twitter’s use of the old OAuth, but somewhat mitigated in that the PhoneGap framework will work better with OA1.0 than the native platforms themselves. </p>
+				<p>The last point is a bit of a non-point for me, as I am a quantifiable workflow disaster. I suppose the big lesson I’ve learned is the “don’t clump” philosophy. This doesn’t refer to a policy of not watching terrible Eddie Murphy movies (though this is a good policy), but rather to one of not “binging” when it comes to work; getting a little bit done every day rather than just doing everything in one day.</p>
+				<p>Of course, being the flake I am on these issues, I’ve broken this rule a few times, and it’s never been particularly fun, which is why I recommend people don’t do it.</p>
+			</div>
+		</div>
+	
+	</div>
+	
+	<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>

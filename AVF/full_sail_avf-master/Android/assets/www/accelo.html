@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - Accelerometer Demo
+ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        
+    	<!-- Personal css to override  -->
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    	
+    	<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+		<title>Accelerometer Demo</title>
+	</head>
+	<body>
+		<!-- "Header Section" -->
+		<div class="row">
+			<div class="eight-columns">
+				<h1>Accelerometer Demo</h1>
+			</div>
+		</div>
+		
+		<!-- Content section -->
+		<div class="row">
+			<!-- Home navigation -->
+			<div class = "one-columns">
+				<!-- CSS-drawn arrow -->
+				<a href="index.html"><div class="arrow-left"></div></a>
+				<p>Index</p>
+			</div>
+			<!-- core content -->
+			<div class ="seven-columns">
+				<p>Below is a readout of the current accelerometer readings that will update every 1000MS(1 second)</p>
+				<a class="button accelBtn">Start Tracking</a>
+				<a class="button stopAccel">Stop Tracking</a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="eight-columns">
+				<div class="accelPanel"></div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+    	<script type="text/javascript" src="js/native.js"></script>
+	</body>
+</html>

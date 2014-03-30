@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Michael Mancuso
+	AVF 0113 - AVF Demo App - Twitter Data API Demo
+ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<meta name="format-detection" content="telephone=no">
+    	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        
+    	<!-- Personal css to override  -->
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    	
+    	<script type="text/javascript" src="js/modernizr.foundation.js"></script>
+		<title>Twitter Data Demo</title>
+	</head>
+	<body>
+		<!-- "Header Section" -->
+		<div class="row">
+			<div class="eight-columns">
+				<h1>Twitter Data Demo</h1>
+			</div>
+		</div>
+		
+		<!-- Content section -->
+		<div class="row">
+			<!-- Home navigation -->
+			<div class = "one-columns">
+				<!-- CSS-drawn arrow -->
+				<a href="index.html"><div class="arrow-left"></div></a>
+				<p>Index</p>
+			</div>
+			<!-- core content -->
+			<div class ="seven-columns">
+				
+					<h2>Twitter General Search</h2>
+					<p>This example uses the twitter search api to generate results similar to the omnibox search on the twitter website. Enter a term below to return a small sample of the search results.</p>					
+					<div class="row">
+						<div class ="four-columns">
+  							<div class="seven-columns">
+    							<input id="searchBox" type="text">
+  							</div>
+  							<div class="one-columns">
+    							<a id="searchBtn" class="button">Search</a>
+  							</div>
+  						</div>
+					</div>
+					<!-- I use a class for the ul for the sake of being able to re-use the JS code 
+					on another page, whereas I use an id for the search button for only using for this page.
+					My "mashup" implementation won't be using a search box but WILL be using a UL.  -->
+					
+			</div>
+		</div>
+		<div class="eight-columns">
+			<ul class="searchResults"></ul>
+			<hr>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+    	<script type="text/javascript" src="js/jquery.js"></script>
+    	<script type="text/javascript" src="js/twitter.js"></script>
+	</body>
+</html>
